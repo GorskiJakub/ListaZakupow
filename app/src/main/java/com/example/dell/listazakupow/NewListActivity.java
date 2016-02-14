@@ -104,7 +104,7 @@ public class NewListActivity extends Activity {
                 int success = json.getInt(TAG_SUCCESS);
 
                 if (success == 1) {
-                    // successfully created product
+                    // successfully created List
                     Intent i = new Intent(getApplicationContext(), UserListActivity.class);
                     startActivity(i);
 
