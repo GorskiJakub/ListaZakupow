@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dell.listazakupow" >
+    package="com.example.dell.lista_zakupow" >
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,51 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainScreenActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".AllProductsActivity"
+            android:label="All Products" >
+        </activity>
+
+        <!-- All List Activity -->
+        <activity android:name=".UserListActivity"
+            android:label="Your Lists">
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name=".NewProductActivity"
+            android:label="Add New Product" >
+        </activity>
+
+        <!-- Share List activity -->
+        <activity
+            android:name=".ShareListActivity"
+            android:label="Share List">
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name=".EditProductActivity"
+            android:label="Edit Product" >
+        </activity>
     </application>
 
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
